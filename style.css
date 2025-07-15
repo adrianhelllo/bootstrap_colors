@@ -1,0 +1,18 @@
+#txt-bg p[class]::after {
+    content: "My color is called: " attr(class);
+    background-color: #444;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.1s ease-in-out;
+    white-space: nowrap;
+}
+
+#txt-bg p[class]:hover::after {
+    background-color: #666;
+}
+
+.secondary-lighter {
+    background-color: #555;
+}
